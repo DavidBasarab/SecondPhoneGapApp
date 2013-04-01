@@ -44,14 +44,22 @@ body {
 
 .header-button {
     position: absolute;
-    top: 6;
+    top: 6px;
     padding: 7px 5px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     line-height: 1em;
 }
 
 .header-button-left {
-    left: 4;
+    left: 4px;
+    top: 6px;
+    background-color: #4d58ff;
+}
+
+.header-button-left.button {
+    background-color: #4d58ff;
+    border: 1px solid #DCDCDC;
+
 }
 
 .search-bar {

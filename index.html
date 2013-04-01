@@ -26,12 +26,39 @@
             </li>
             {{/.}}
         </script>
+        <script id="employee-template" type="text/x-handlebars-template">
+            <div class="header">
+                <a href="#" class="button header-button header-button-left">Back</a>
+
+                <h1>Details</h1>
+            </div>
+            <div class="details">
+                <img class="employee-image" src="img/{{firstName}}_{{lastName}}.jpg"/>
+
+                <h1>{{firstName}} {{lastName}}</h1>
+
+                <h2>{{title}}</h2>
+                <span class="location"></span>
+                <ul>
+                    <li>
+                        <a href="tel:{{officePhone}}">Call Office<br/>{{officePhone}}</a>
+                    </li>
+                    <li>
+                        <a href="tel:{{cellPhone}}">Call Cell<br/>{{cellPhone}}</a>
+                    </li>
+                    <li>
+                        <a href="sms:{{cellPhone}}">SMS<br/>{{cellPhone}}</a>
+                    </li>
+                </ul>
+            </div>
+        </script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="lib/handlebars.js"></script>
         <script type="text/javascript" src="lib/iscroll.js"></script>
         <script type="text/javascript" src="js/storage/memory-store.js"></script>
         <script type="text/javascript" src="js/HomeView.js"></script>
+        <script type="text/javascript" src="js/EmployeeView.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
